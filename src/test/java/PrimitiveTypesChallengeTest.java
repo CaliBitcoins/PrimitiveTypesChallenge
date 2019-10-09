@@ -15,7 +15,11 @@ public class PrimitiveTypesChallengeTest {
         byte myByteVariable = 8;
         short myShortVariable = 100;
         int myIntVariable = 1200;
-        long myLongVariable = (long) (5000 + (10* (myByteVariable + myShortVariable + myIntVariable)));
+
+        // Same Result using Casting vs declaring 50000L & 10L used in ptc Class Instance 
+        long myLongVariable = (long) (50000 + (10* (myByteVariable + myShortVariable + myIntVariable)));
+
+        // Create new instance of PrimitiveTypesChallenge Class
         PrimitiveTypesChallenge ptc = new PrimitiveTypesChallenge();
 
         // Step 2: Exercises
